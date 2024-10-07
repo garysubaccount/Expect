@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover 標籤示例</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .big-box {
+        width: 200px;
+        height: 200px;
+        background-color: #4a90e2;
+        position: relative;
+        z-index: 1; /* 確保大物件在標籤後面 */
+    }
+
+    .tag {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        background-color: #e94e77;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        top: 50px;
+        right: 170px;
+        transition: width 0.3s, z-index 0s 0.3s; /* 實現動畫效果 */
+        z-index: 0; /* 預設在大物件後面 */
+    }
+
+    .tag:hover {
+        width: 150px; /* hover 時變長 */
+        transition: width 0.3s, z-index 0s; /* 過渡動畫 */
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="big-box"></div>
+        <div class="tag">標籤</div>
+    </div>
+</body>
+</html>
