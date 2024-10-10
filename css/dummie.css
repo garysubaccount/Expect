@@ -10,15 +10,12 @@
     justify-content: space-between;
 }
 
-#salary, #requirement {
+#downside >div {
     background-color: #f4eee2;
     width: calc(45% - 40px);
     height: calc(100% - 40px);
     padding: 20px;
     border-radius: 10px;
-}
-
-#salary ,#requirement {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,17 +59,20 @@
 
 #skill ,#licence{
     height: 50%;
+    overflow: hidden;
     p {
         font-size: 18px;
     }
 }
 
 #links {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
 #link{
+    min-width: 32px;
     background-color: #ffb144;
     color: #fff;
     padding: 5px 10px;

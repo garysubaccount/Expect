@@ -1,0 +1,19 @@
+@media screen and (min-width: 846px) {
+    
+}
+
+@media screen and (max-width: 845px) {
+    #downside {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    #downside > div {
+        width: calc(100% - 40px);
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    
+}

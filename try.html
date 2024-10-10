@@ -6,52 +6,79 @@
     <title>Hover 標籤示例</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f0f0f0;
-    }
-
-    .container {
-        position: relative;
-    }
-
-    .big-box {
-        width: 200px;
-        height: 200px;
-        background-color: #4a90e2;
-        position: relative;
-        z-index: 1; /* 確保大物件在標籤後面 */
-    }
-
-    .tag {
-        position: absolute;
-        width: 100px;
-        height: 30px;
-        background-color: #e94e77;
-        color: white;
-        text-align: center;
-        line-height: 30px;
-        border-radius: 5px;
-        top: 50px;
-        right: 170px;
-        transition: width 0.3s, z-index 0s 0.3s; /* 實現動畫效果 */
-        z-index: 0; /* 預設在大物件後面 */
-    }
-
-    .tag:hover {
-        width: 150px; /* hover 時變長 */
-        transition: width 0.3s, z-index 0s; /* 過渡動畫 */
-    }
+        .group {
+          margin: 5rem auto;
+          width: 60%;
+        }
+        .radio-group {
+          width: 30%;
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+        .radio-input {
+          visibility: hidden; /* 把原本的input藏起來 */
+        }
+        .radio-label {
+          font-size: 1.6rem;
+          cursor: pointer;
+          position: relative;
+          padding-left: 3rem;
+        }
+        .radio-button {
+          /* 自定義樣式的span */
+          height: 1.5rem;
+          width: 1.5rem;
+          border: 5px solid green;
+          border-radius: 50%;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        .radio-button::after { /* 中間點點 */
+          content: "";
+          display: block;
+          height: 1rem;
+          width: 1rem;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: green;
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+        .radio-input:checked ~ .radio-label .radio-button::after {
+          /* 選中radio時 才顯示中間點點 */
+          opacity: 1;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="big-box"></div>
-        <div class="tag">標籤</div>
-    </div>
+    <div class="group">
+        <div class="radio-group">
+          <input type="radio" class="radio-input" id="1" name="number">
+          <label for="1" class="radio-label">
+           <span class="radio-button"></span>
+           radio 1
+          </label>
+        </div>
+        <div class="radio-group">
+          <input type="radio" class="radio-input" id="2" name="number">
+          <label for="2" class="radio-label">
+            <span class="radio-button"></span>
+            radio 2
+          </label>
+        </div>
+        
+        <div class="radio-group">
+          <input type="radio" class="radio-input" id="3" name="number">
+          <label for="3" class="radio-label">
+            <span class="radio-button"></span>
+            radio 3
+          </label>
+        </div>
+      </div>
 </body>
 </html>

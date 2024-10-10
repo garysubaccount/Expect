@@ -21,14 +21,14 @@ const titles = {
 }
 
 const cssFiles = {
-    "index.html": ["css/layout.css", "css/index.css"],
-    "forcast.html": ["css/layout.css", "css/forcast.css"],
-    "dummie.html": ["css/layout.css", "css/dummie.css"],
-    "dummie-more.html": ["css/layout.css", "css/dummie-more.css"],
-    "test.html": ["css/layout.css", "css/test.css"],
-    "test-testing.html": ["css/layout.css", "css/test.css"],
-    "test-history.html": ["css/layout.css", "css/test-history.css"],
-    "result.html": ["css/layout.css", "css/result.css"]
+    "index.html": ["css/layout.css", "css/layout-rwd.css", "css/index.css", "css/index-rwd.css"],
+    "forcast.html": ["css/layout.css", "css/layout-rwd.css", "css/forcast.css"],
+    "dummie.html": ["css/layout.css", "css/layout-rwd.css", "css/dummie.css", "css/dummie-rwd.css"],
+    "dummie-more.html": ["css/layout.css", "css/layout-rwd.css", "css/dummie-more.css"],
+    "test.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css"],
+    "test-testing.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css"],
+    "test-history.html": ["css/layout.css", "css/layout-rwd.css", "css/test-history.css"],
+    "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css"]
 }
 
 const jsFiles = {

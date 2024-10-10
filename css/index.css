@@ -1,6 +1,5 @@
 #carousel {
     background-color: #d9d9d9;
-    width: 60%;
     height: 55%;
     border-radius: 10px;
     display: flex;
@@ -26,9 +25,9 @@
 
 #previous, #next {
     color: #fff;
-    width: 150px;
+    width: 10%;
     height: 100%;
-    font-size: 36px;
+    font-size: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;

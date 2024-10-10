@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>編輯題目</title>
+    <link rel="stylesheet" href="css/test-edit.css">
+</head>
+<body>
+    <dialog open="">
+        <a href="" id="close">X</a>
+        <div class="title">編輯題目</div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>題目</th>
+                    <td><textarea name="" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <th>選項</th>
+                    <td>
+                        <input type="text" id="dynamic-input" value="選項">
+                        <input type="text" id="dynamic-input" value="選項">
+                        <input type="text" id="dynamic-input" value="選項">
+                        <input type="text" id="dynamic-input" value="選項">
+                        <input type="text" id="dynamic-input" value="選項">
+                        <input type="text" id="dynamic-input" value="選項">
+                        <input type="text" id="dynamic-input" value="選項">
+                        <input type="text" id="dynamic-input" value="選項">
+                    </td>
+                </tr>
+                <tr>
+                    <th>背景圖</th>
+                    <td>
+                        <input type="file" id="upload" accept="image/*">
+                        <label type="button" for="upload" class="upload">上傳圖片</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>顏色</th>
+                    <td>
+                        <input type="radio" name="color" id="f6cf80">
+                        <label for="f6cf80"></label>
+                        <input type="radio" name="color" id="ffe785">
+                        <label for="ffe785"></label>
+                        <input type="radio" name="color" id="fdfecb">
+                        <label for="fdfecb"></label>
+                        <input type="radio" name="color" id="745329">
+                        <label for="745329"></label>
+                        <input type="radio" name="color" id="d5ad8a">
+                        <label for="d5ad8a"></label>
+                        <input type="radio" name="color" id="dbc8b6">
+                        <label for="dbc8b6"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>動畫圖</th>
+                    <td>
+                        <input type="file" id="upload" accept="image/*">
+                        <label type="button" for="upload" class="upload">上傳圖片</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <button class="preview">預覽</button>
+            <input type="submit" class="save" value="儲存">
+        </div>
+    </dialog>
+    <script src="javascript/dynamic.js"></script>
+</body>
+</html>
