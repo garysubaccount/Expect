@@ -5,15 +5,51 @@
 @media screen and (max-width: 845px) {
     #downside {
         width: 80%;
+    }
+    
+    #downside > div {
+        width: calc(47% - 40px);
+    }
+
+    .seniority {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    header {
+        position: fixed;
+    }
+    
+    main {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    #upside {
+        width: 100%;
+        height: 300px;
+    }
+
+    #downside {
+        height: auto;
         flex-direction: column;
     }
 
     #downside > div {
         width: calc(100% - 40px);
+        height: 210px;
+    }
+
+    #salary {
         margin-bottom: 40px;
     }
-}
 
-@media screen and (max-width: 470px) {
-    
+    .seniority {
+        font-size: 5vw;
+    }
+
+    .link {
+        font-size: 3vw;
+    }
 }

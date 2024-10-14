@@ -7,7 +7,7 @@
         font-size: 2vw;
     }
 
-    #login {
+    #login, #userinfo {
         height: 50%;
     }
 }

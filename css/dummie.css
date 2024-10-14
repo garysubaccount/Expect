@@ -10,7 +10,7 @@
     justify-content: space-between;
 }
 
-#downside >div {
+#downside > div {
     background-color: #f4eee2;
     width: calc(45% - 40px);
     height: calc(100% - 40px);
@@ -22,8 +22,11 @@
     align-items: center;
 }
 
-#title {
+.title {
     font-size: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #content {
@@ -40,7 +43,7 @@
     width: 50%;
     display: flex;
     justify-content: space-evenly;
-    div {
+    > div {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -48,8 +51,11 @@
 }
 
 .seniority {
-    font-size: 20px;
+    font-size: 1.2vw;
     text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .salary {
@@ -71,14 +77,16 @@
     flex-wrap: wrap;
 }
 
-#link{
-    min-width: 32px;
+.link {
+    min-width: 50%;
     background-color: #ffb144;
     color: #fff;
     padding: 5px 10px;
-    margin: 5px;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

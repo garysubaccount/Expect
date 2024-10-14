@@ -22,11 +22,12 @@
     }
     
     main {
-        padding: 110px 0;
+        padding: 100px 0;
         height: auto;
     }
 
     #wrap {
+        width: 90%;
         height: auto;
         flex-direction: column-reverse;
     }
