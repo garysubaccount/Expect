@@ -6,6 +6,10 @@
     header {
         font-size: 2vw;
     }
+
+    #login {
+        height: 50%;
+    }
 }
 
 @media screen and (max-width: 470px) {

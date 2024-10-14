@@ -1,15 +1,19 @@
 #wrap {
-    background-color: #f4eee2;
     width: 75%;
     height: 85%;
     border-radius: 10px;
+    display: flex;
     position: relative;
+    > * {
+        background-color: #f4eee2;
+    }
 }
 
 #leftside {
     width: calc(55% - 30px);
     height: calc(100% - 30px);
     padding: 15px;
+    border-radius: 10px 0 0 10px;
     float: left;
     display: flex;
     flex-direction: column;
@@ -20,6 +24,7 @@
 #rightside {
     width: calc(45% - 80px);
     height: calc(100% - 80px);
+    border-radius: 0 10px 10px 0;
     padding: 40px;
     float: right;
     display: flex;
@@ -29,13 +34,15 @@
 }
 
 #search {
-    width: 30%;
+    width: 60%;
     height: 40px;
     display: flex;
     align-items: center;
     position: absolute;
     top: 20px;
-    right: 70px;
+    right: 50%;
+    z-index: 1;
+    transform: translate(50%);
 }
 
 input[type = "search"] {
@@ -100,6 +107,11 @@ canvas {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px dashed #745329;
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }
 
 .column:not(:first-of-type) a {
@@ -110,13 +122,20 @@ canvas {
 }
 
 .indicators {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    a {
+        width: 80%;
+    }
 }
 
 .icon {
     background-color: #d5ad8a;
-    width: 80px;
-    height: 50px;
+    width: 100%;
+    aspect-ratio: 2/1;
     border-radius: 10px;
     position: relative;
 }

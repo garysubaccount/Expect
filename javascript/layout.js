@@ -22,7 +22,7 @@ const titles = {
 
 const cssFiles = {
     "index.html": ["css/layout.css", "css/layout-rwd.css", "css/index.css", "css/index-rwd.css"],
-    "forcast.html": ["css/layout.css", "css/layout-rwd.css", "css/forcast.css"],
+    "forcast.html": ["css/layout.css", "css/layout-rwd.css", "css/forcast.css", "css/forcast-rwd.css"],
     "dummie.html": ["css/layout.css", "css/layout-rwd.css", "css/dummie.css", "css/dummie-rwd.css"],
     "dummie-more.html": ["css/layout.css", "css/layout-rwd.css", "css/dummie-more.css"],
     "test.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css"],
