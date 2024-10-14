@@ -43,10 +43,11 @@
     right: 0;
 }
 
-#icons {
+.icons {
     width: 65%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .icon {

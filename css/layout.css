@@ -119,7 +119,7 @@ header > ul {
 }
 
 #userinfo {
-aspect-ratio: 1/1;
+    aspect-ratio: 1/1;
     height: 70%;
     position: absolute;
     right: 1%;
@@ -241,6 +241,7 @@ footer {
 footer a {
     aspect-ratio: 1/1;
     height: 60%;
+    display: none;
 }
 
 .nav-icon {

@@ -29,12 +29,13 @@
 }
 
 #search {
-    width: 65%;
+    width: 30%;
     height: 40px;
     display: flex;
     align-items: center;
     position: absolute;
     top: 20px;
+    right: 70px;
 }
 
 input[type = "search"] {

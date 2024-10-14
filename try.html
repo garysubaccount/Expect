@@ -7,78 +7,78 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .group {
-          margin: 5rem auto;
-          width: 60%;
+            margin: 5rem auto;
+            width: 60%;
         }
         .radio-group {
-          width: 30%;
-          display: inline-block;
-          margin-bottom: 1rem;
+            width: 30%;
+            display: inline-block;
+            margin-bottom: 1rem;
         }
         .radio-input {
-          visibility: hidden; /* 把原本的input藏起來 */
+            visibility: hidden; /* 把原本的input藏起來 */
         }
         .radio-label {
-          font-size: 1.6rem;
-          cursor: pointer;
-          position: relative;
-          padding-left: 3rem;
+            font-size: 1.6rem;
+            cursor: pointer;
+            position: relative;
+            padding-left: 3rem;
         }
         .radio-button {
-          /* 自定義樣式的span */
-          height: 1.5rem;
-          width: 1.5rem;
-          border: 5px solid green;
-          border-radius: 50%;
-          display: inline-block;
-          position: absolute;
-          left: 0;
-          top: 0;
+            /* 自定義樣式的span */
+            height: 1.5rem;
+            width: 1.5rem;
+            border: 5px solid green;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
         .radio-button::after { /* 中間點點 */
-          content: "";
-          display: block;
-          height: 1rem;
-          width: 1rem;
-          border-radius: 50%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: green;
-          opacity: 0;
-          transition: opacity 0.2s;
+            content: "";
+            display: block;
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: green;
+            opacity: 0;
+            transition: opacity 0.2s;
         }
         .radio-input:checked ~ .radio-label .radio-button::after {
-          /* 選中radio時 才顯示中間點點 */
-          opacity: 1;
+            /* 選中radio時 才顯示中間點點 */
+            opacity: 1;
         }
     </style>
 </head>
 <body>
     <div class="group">
         <div class="radio-group">
-          <input type="radio" class="radio-input" id="1" name="number">
-          <label for="1" class="radio-label">
-           <span class="radio-button"></span>
-           radio 1
-          </label>
+            <input type="radio" class="radio-input" id="1" name="number">
+            <label for="1" class="radio-label">
+                <span class="radio-button"></span>
+                radio 1
+            </label>
         </div>
         <div class="radio-group">
-          <input type="radio" class="radio-input" id="2" name="number">
-          <label for="2" class="radio-label">
-            <span class="radio-button"></span>
-            radio 2
-          </label>
+            <input type="radio" class="radio-input" id="2" name="number">
+            <label for="2" class="radio-label">
+                <span class="radio-button"></span>
+                radio 2
+            </label>
         </div>
         
         <div class="radio-group">
-          <input type="radio" class="radio-input" id="3" name="number">
-          <label for="3" class="radio-label">
-            <span class="radio-button"></span>
-            radio 3
-          </label>
+            <input type="radio" class="radio-input" id="3" name="number">
+            <label for="3" class="radio-label">
+                <span class="radio-button"></span>
+                radio 3
+            </label>
         </div>
-      </div>
+    </div>
 </body>
 </html>
