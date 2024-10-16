@@ -1,0 +1,269 @@
+#wrap {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F4EEE2;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1 {
+    color: #75add0;
+}
+
+.sort{
+    background-color: #ffe785;
+    width: 90%;
+    height: 40px;
+    border-radius:10px;
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sort >*{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sort .all::after{
+    content: '';
+    border: 5px solid;
+    border-color: black transparent transparent;
+    transform: translate(10px,25%);
+}
+
+.all{
+    margin-left: 37px;
+}
+
+.pages {
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.pages a {
+    color: #16435f;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+
+}
+
+.pages a:hover {
+    color: #f0f0f0;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.date{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.search{
+    width: 800px;
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+    margin-top: 10px;
+
+}
+
+.search1 {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.search img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+input[type = "search"] {
+    width: calc(100% - 30px);
+    height: 100%;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.left{
+    width: 12%;
+    margin-left: 5%;
+    margin-top: 20px;    
+    height: 390px;
+}
+
+.right{
+    width: 88%;
+    height: 120px;
+    margin-right: 5%;
+}
+
+.info {
+    background-color: #d5ad8a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding: 10px 15%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.date-circle {
+    border: 2px solid #745329;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 18px;
+    position: fixed;
+}
+.vertical-line {
+    width: 2px;
+    height: 295px;
+    background-color: #745329;
+    margin-top: 85px;
+    margin-left: 53px;
+    position: absolute;
+}
+
+
+
+#contents{
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 5px 10px;
+    padding-right: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+}
+
+.content:first-of-type {
+    margin-top: 0;
+}
+
+.content:last-of-type {
+    margin-bottom: 0;
+}
+
+.title {
+    color: #745329;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+}
+
+.duration img {
+    width: 30px;
+    height: 30px;
+}
+
+.duration p {
+    color: #bb7331;
+}
+
+.nametime {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.datetime{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}
+.date-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+
+.date-container input[type="date"] {
+    padding: 5px;
+    font-size: 14px;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.date-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.date-input-wrapper input[type="date"] {
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.uu{
+    width: 60px;
+    font-size: 20px;
+}
+
+.dd{
+    margin: 0px 10px 0px 10px;
+}

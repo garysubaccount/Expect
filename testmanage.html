@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/layout.js"></script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div id="search">
+                <input type="search" placeholder="搜尋">
+                <a href="" id="searchbtn">
+                    <img src="images/search.png" alt="">
+                </a>
+                <div class = "imageadd">
+                    <a href=""><img src="images/add.png" alt=""></a>
+                </div>
+            </div>
+            <div class="sort">             
+                <div class="number" onclick="sortTable(0)">題號</div>             
+                <div class="content">測驗題目內容</div>             
+                <div class="time">更新時間</div>         
+            </div>         
+            <table id="items">             
+                <tr>                 
+                    <td class="number">1</td>                 
+                    <td class="content">內容</td>                 
+                    <td class="time">2024/09/20</td>                 
+                    <td class="edit">                     
+                        <a href=""><img src ="images/edit.png"></a>                 
+                    </td>             
+                </tr>             
+                <tr>                 
+                    <td class="number">2</td>                 
+                    <td class="content">內容</td>                 
+                    <td class="time">2024/09/20</td>                 
+                    <td class="edit">                     
+                        <a href=""><img src ="images/edit.png"></a>                 
+                    </td>               
+                </tr>             
+                <tr>                 
+                    <td class="number">3</td>                 
+                    <td class="content">內容</td>                 
+                    <td class="time">2024/09/20</td>                 
+                    <td class="edit">                     
+                        <a href=""><img src ="images/edit.png"></a>                 
+                    </td>                
+                </tr>             
+                <tr>                 
+                    <td class="number">4</td>                
+                    <td class="content">內容</td>                 
+                    <td class="time">2024/09/20</td>                 
+                    <td class="edit">                     
+                        <a href=""><img src ="images/edit.png"></a>                 
+                    </td>              
+                </tr>             
+                <tr>                 
+                    <td class="number">5</td>                 
+                    <td class="content">內容</td>                 
+                    <td class="time">2024/09/20</td>                 
+                    <td class="edit">                     
+                        <a href=""><img src ="images/edit.png"></a>                 
+                    </td>               
+                </tr>             
+                <tr>                 
+                    <td class="number">6</td>                 
+                    <td class="content">內容</td>                 
+                    <td class="time">2024/09/20</td>                
+                    <td class="edit">                     
+                        <a href=""><img src ="images/edit.png"></a>                 
+                    </td>               
+                </tr>
+            </table>
+        </div>
+        <table class="pages" id="pages-sentence">
+            <tr>
+                <td><a href="">1</a></td>
+                <td><a href=""><img src="images/nextpage.png" alt=""></a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

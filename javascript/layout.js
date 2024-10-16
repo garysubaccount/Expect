@@ -6,7 +6,10 @@ const pages = {
     "/test.html": "test.html",
     "/test-testing.html": "test-testing.html",
     "/test-history.html": "test-history.html",
-    "/result.html": "result.html"
+    "/result.html": "result.html",
+    "/testmanage.html": "testmanage.html",
+    "/membermanage.html": "membermanage.html",
+    "/memberactivity.html": "memberactivity.html"
 }
 
 const titles = {
@@ -17,7 +20,10 @@ const titles = {
     "test.html": "職涯測驗",
     "test-testing.html": "職涯測驗",
     "test-history.html": "歷史紀錄",
-    "result.html": "測驗結果"
+    "result.html": "測驗結果",
+    "testmanage.html": "測驗管理",
+    "membermanage.html": "會員管理",
+    "memberactivity.html": "會員活動紀錄"
 }
 
 const cssFiles = {
@@ -28,7 +34,10 @@ const cssFiles = {
     "test.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css", "css/test-rwd.css"],
     "test-testing.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css", "css/test-rwd.css"],
     "test-history.html": ["css/layout.css", "css/layout-rwd.css", "css/test-history.css", "css/test-history-rwd.css"],
-    "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css", "css/result-rwd.css"]
+    "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css", "css/result-rwd.css"],
+    "testmanage.html": ["css/layout.css", "css/layout-rwd.css", "css/testmanage.css", "css/testmanage-rwd.css"],
+    "membermanage.html": ["css/layout.css", "css/layout-rwd.css", "css/membermanage.css", "css/membermanage-rwd.css"],
+    "memberactivity.html": ["css/layout.css", "css/layout-rwd.css", "css/memberactivity.css", "css/memberactivity-rwd.css"]
 }
 
 const jsFiles = {
