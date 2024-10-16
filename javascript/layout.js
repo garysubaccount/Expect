@@ -24,11 +24,11 @@ const cssFiles = {
     "index.html": ["css/layout.css", "css/layout-rwd.css", "css/index.css", "css/index-rwd.css"],
     "forcast.html": ["css/layout.css", "css/layout-rwd.css", "css/forcast.css", "css/forcast-rwd.css"],
     "dummie.html": ["css/layout.css", "css/layout-rwd.css", "css/dummie.css", "css/dummie-rwd.css"],
-    "dummie-more.html": ["css/layout.css", "css/layout-rwd.css", "css/dummie-more.css"],
-    "test.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css"],
-    "test-testing.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css"],
-    "test-history.html": ["css/layout.css", "css/layout-rwd.css", "css/test-history.css"],
-    "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css"]
+    "dummie-more.html": ["css/layout.css", "css/layout-rwd.css", "css/dummie-more.css", "css/dummie-more-rwd.css"],
+    "test.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css", "css/test-rwd.css"],
+    "test-testing.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css", "css/test-rwd.css"],
+    "test-history.html": ["css/layout.css", "css/layout-rwd.css", "css/test-history.css", "css/test-history-rwd.css"],
+    "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css", "css/result-rwd.css"]
 }
 
 const jsFiles = {

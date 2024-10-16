@@ -73,15 +73,16 @@
 
 #links {
     width: 100%;
+    height: calc(100% - 24px);
     display: flex;
     flex-wrap: wrap;
 }
 
 .link {
-    min-width: 50%;
+    height: 40%;
+    aspect-ratio: 2/1;
     background-color: #ffb144;
     color: #fff;
-    padding: 5px 10px;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -89,4 +90,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+#salary .link {
+    height: 15%;
 }

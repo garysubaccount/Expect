@@ -2,7 +2,7 @@
     
 }
 
-@media screen and (max-width: 846px) and (min-width: 471px){
+@media screen and (max-width: 845px) and (min-width: 471px) {
     header {
         font-size: 2vw;
     }

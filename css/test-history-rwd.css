@@ -1,0 +1,32 @@
+@media screen and (max-width: 845px) {
+    #wrap {
+        width: 80%;
+    }
+
+    .info {
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #wrap {
+        font-size: 3vw;
+    }
+
+    .sort > * {
+        font-size: 3.5vw;
+    }
+
+    .date, .time {
+        width: 25%;
+    }
+    
+    .result {
+        width: 20%;
+    }
+    
+    .info {
+        font-size: 3vw;
+        padding: 5px 10px;
+    }
+}
