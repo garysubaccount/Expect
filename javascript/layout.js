@@ -99,9 +99,11 @@ window.addEventListener("DOMContentLoaded", function () {
 function login() {
     var login = document.querySelectorAll("#login");
     var registerpage = document.getElementById("register");
+    var forgotpwd = document.getElementById("forgotpwd");
     var closebtn = document.querySelectorAll("#close");
     var loginpage = document.getElementById("loginpage");
     var registerpage = document.getElementById("registerpage");
+    var forgotpage = document.getElementById("forgotpage");
 
     login.forEach(function(link){
         link.addEventListener("click", function(event){
@@ -117,16 +119,23 @@ function login() {
         registerpage.style.display = "flex";
     });
 
+    forgotpwd.addEventListener("click", function(event) {
+        event.preventDefault();
+        forgotpage.style.display = "flex";
+        loginpage.style.display = "none"
+    })
+
     closebtn.forEach(function(btn) {
         btn.addEventListener("click", function(event) {
             event.preventDefault();
             loginpage.style.display = "none";
             registerpage.style.display = "none";
+            forgotpage.style.display = "none";
         });
     });
 }
 
-function userinfo( ){
+function userinfo() {
     var userinfo = document.getElementById("userinfo");
     var infopage = document.getElementById("infopage");
 
