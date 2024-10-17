@@ -63,7 +63,6 @@ function layout(page) {
         const jsFile = jsFiles[page];
         login();
         userinfo();
-
         if (title) {
             document.title = title;
         }
