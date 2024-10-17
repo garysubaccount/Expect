@@ -24,8 +24,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 25%;
-    top: -7.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     -webkit-text-stroke: 3px #745329;
 }
@@ -91,6 +91,7 @@
 #sort p {
     width: 15%;
     text-align: center;
+    white-space: nowrap;
 }
 
 #intro {
@@ -122,7 +123,7 @@
     z-index: 0;
 }
 
-#icons {
+.icons {
     width: 65%;
     display: flex;
     justify-content: space-between;

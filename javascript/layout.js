@@ -7,8 +7,8 @@ const pages = {
     "/test-testing.html": "test-testing.html",
     "/test-history.html": "test-history.html",
     "/result.html": "result.html",
-    "/testmanage.html": "testmanage.html",
-    "/membermanage.html": "membermanage.html",
+    "/admin-test.html": "admin-test.html",
+    "/admin-member.html": "admin-member.html",
     "/memberactivity.html": "memberactivity.html"
 }
 
@@ -21,8 +21,8 @@ const titles = {
     "test-testing.html": "職涯測驗",
     "test-history.html": "歷史紀錄",
     "result.html": "測驗結果",
-    "testmanage.html": "測驗管理",
-    "membermanage.html": "會員管理",
+    "admin-test.html": "測驗管理",
+    "admin-member.html": "會員管理",
     "memberactivity.html": "會員活動紀錄"
 }
 
@@ -35,14 +35,16 @@ const cssFiles = {
     "test-testing.html": ["css/layout.css", "css/layout-rwd.css", "css/test.css", "css/test-rwd.css"],
     "test-history.html": ["css/layout.css", "css/layout-rwd.css", "css/test-history.css", "css/test-history-rwd.css"],
     "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css", "css/result-rwd.css"],
-    "testmanage.html": ["css/layout.css", "css/layout-rwd.css", "css/testmanage.css", "css/testmanage-rwd.css"],
-    "membermanage.html": ["css/layout.css", "css/layout-rwd.css", "css/membermanage.css", "css/membermanage-rwd.css"],
+    "admin-test.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-test.css", "css/admin-test-rwd.css"],
+    "admin-member.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-member.css", "css/admin-member-rwd.css"],
     "memberactivity.html": ["css/layout.css", "css/layout-rwd.css", "css/memberactivity.css", "css/memberactivity-rwd.css"]
 }
 
 const jsFiles = {
     "index.html": ["javascript/carousel.js"],
-    "test-testing.html":  ["javascript/dropable.js"]
+    "test-testing.html": ["javascript/dropable.js"],
+    "test-history.html": ["javascript/sorttable.js"],
+    "admin-test.html": ["javascript/sorttable.js"]
 }
 
 function layout(page) {

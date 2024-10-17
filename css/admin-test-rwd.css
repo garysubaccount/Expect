@@ -31,4 +31,9 @@
         font-size: 3vw;
         padding: 5px 10px;
     }
+
+    #search {
+        right: 50%;
+        transform: translate(50%,50%);
+    }
 }

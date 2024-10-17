@@ -2,7 +2,57 @@
 }
 
 @media screen and (max-width: 845px) {
+    #sort p {
+        font-size: 2vw;
+    }
+
+    .bar {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 470px) {
+    header {
+        position: fixed;
+    }
+
+    main {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    #result {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #result > * {
+        width: 90%;
+        height: 300px;
+        padding: 25px 0;
+    }
+
+    #sort p {
+        font-size: 4vw;
+    }
+
+    .title {
+        height: 10%;
+        font-size: 24px;
+    }
+    
+    .icons {
+        width: 80%;
+        height: 70%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .icon-wrap {
+        width: 26%;
+        p {
+            font-size: 4vw;
+        }
+    }
 }

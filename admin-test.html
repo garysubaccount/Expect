@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/layout.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="search">
+            <input type="search" placeholder="搜尋">
+            <a href="" id="searchbtn">
+                <img src="images/search.png" alt="">
+            </a>
+            <a href="" class="add"><img src="images/add.svg" alt=""></a>
+        </div>
+        <div id="container">
+            <div class="sort">
+                <div class="number" onclick="sortTable(0)">題號</div>
+                <div class="content">測驗題目內容</div>
+                <div class="date" onclick="sortTable(2)">更新時間</div>
+            </div>
+            <table id="items">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="content">內容</td>
+                    <td class="date">2024/09/20</td>
+                    <td class="edit">
+                        <a href=""><img src ="images/edit.svg"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="content">內容</td>
+                    <td class="date">2024/09/21</td>
+                    <td class="edit">
+                        <a href=""><img src ="images/edit.svg"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="content">內容</td>
+                    <td class="date">2024/09/22</td>
+                    <td class="edit">
+                        <a href=""><img src ="images/edit.svg"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="content">內容</td>
+                    <td class="date">2024/09/23</td>
+                    <td class="edit">
+                        <a href=""><img src ="images/edit.svg"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td class="content">內容</td>
+                    <td class="date">2024/09/24</td>
+                    <td class="edit">
+                        <a href=""><img src ="images/edit.svg"></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="pages" id="pages-sentence">
+                <tr>
+                    <td><a href="">1</a></td>
+                    <td><a href=""><img src="images/nextpage.svg" alt=""></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
