@@ -119,7 +119,7 @@ header > ul {
     }
 }
 
-#userinfo {
+.userinfo {
     aspect-ratio: 1/1;
     height: 70%;
     position: absolute;

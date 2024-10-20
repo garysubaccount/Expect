@@ -9,7 +9,8 @@ const pages = {
     "/result.html": "result.html",
     "/admin-test.html": "admin-test.html",
     "/admin-member.html": "admin-member.html",
-    "/admin-activity.html": "admin-activity.html"
+    "/admin-activity.html": "admin-activity.html",
+    "/mailverify.html": "mailverify.html"
 }
 
 const titles = {
@@ -23,7 +24,8 @@ const titles = {
     "result.html": "測驗結果",
     "admin-test.html": "測驗管理",
     "admin-member.html": "會員管理",
-    "admin-activity.html": "會員活動紀錄"
+    "admin-activity.html": "會員活動紀錄",
+    "mailverify.html": "信箱驗證成功"
 }
 
 const cssFiles = {
@@ -36,15 +38,17 @@ const cssFiles = {
     "test-history.html": ["css/layout.css", "css/layout-rwd.css", "css/test-history.css", "css/test-history-rwd.css"],
     "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css", "css/result-rwd.css"],
     "admin-test.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-test.css", "css/admin-test-rwd.css"],
-    "admin-member.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-member.css", "css/admin-member-rwd.css"],
-    "admin-activity.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-activity.css", "css/admin-activity-rwd.css"]
+    "admin-member.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-member.css"],
+    "admin-activity.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-activity.css", "css/admin-activity-rwd.css"],
+    "mailverify.html": ["css/layout.css", "css/layout-rwd.css", "css/mailverify.css"]
 }
 
 const jsFiles = {
     "index.html": ["javascript/carousel.js"],
     "test-testing.html": ["javascript/dropable.js"],
     "test-history.html": ["javascript/sorttable.js"],
-    "admin-test.html": ["javascript/sorttable.js"]
+    "admin-test.html": ["javascript/sorttable.js"],
+    "admin-member.html": ["javascript/edituser.js", "javascript/adduser.js"]
 }
 
 function layout(page) {
@@ -98,7 +102,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function login() {
     var login = document.querySelectorAll("#login");
-    var registerpage = document.getElementById("register");
+    var register = document.getElementById("register");
     var forgotpwd = document.getElementById("forgotpwd");
     var closebtn = document.querySelectorAll("#close");
     var loginpage = document.getElementById("loginpage");
@@ -111,7 +115,7 @@ function login() {
             loginpage.style.display = "flex";
             registerpage.style.display = "none";
         });
-    })
+    });
 
     register.addEventListener("click", function(event) {
         event.preventDefault();
@@ -123,7 +127,7 @@ function login() {
         event.preventDefault();
         forgotpage.style.display = "flex";
         loginpage.style.display = "none"
-    })
+    });
 
     closebtn.forEach(function(btn) {
         btn.addEventListener("click", function(event) {
@@ -137,10 +141,16 @@ function login() {
 
 function userinfo() {
     var userinfo = document.getElementById("userinfo");
-    var infopage = document.getElementById("infopage");
+    var cancel = document.querySelector('input[type="reset"]');
+    var userpage = document.getElementById("userpage");
 
     userinfo.addEventListener("click", function(event) {
         event.preventDefault();
-        infopage.style.display = "flex";
+        userpage.style.display = "flex";
+    });
+
+    cancel.addEventListener("click", function(event) {
+        event.preventDefault();
+        userpage.style.display = "none";
     });
 }

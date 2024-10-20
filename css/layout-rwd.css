@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 470px) {
-    header > ul, .login, #userinfo {
+    header > ul, .login, .userinfo {
         display: none;
     }
 

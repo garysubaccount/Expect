@@ -1,4 +1,4 @@
-#infopage {
+.infopage {
     width: 550px;
     height: 450px;
 }
@@ -22,6 +22,7 @@ input[type = "submit"], input[type = "reset"] {
     border: none;
     border-radius: 25px;
     padding: 0;
+    cursor: pointer;
 }
 
 input[type = "reset"] {
