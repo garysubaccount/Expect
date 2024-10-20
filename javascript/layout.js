@@ -9,7 +9,7 @@ const pages = {
     "/result.html": "result.html",
     "/admin-test.html": "admin-test.html",
     "/admin-member.html": "admin-member.html",
-    "/memberactivity.html": "memberactivity.html"
+    "/admin-activity.html": "admin-activity.html"
 }
 
 const titles = {
@@ -23,7 +23,7 @@ const titles = {
     "result.html": "測驗結果",
     "admin-test.html": "測驗管理",
     "admin-member.html": "會員管理",
-    "memberactivity.html": "會員活動紀錄"
+    "admin-activity.html": "會員活動紀錄"
 }
 
 const cssFiles = {
@@ -37,7 +37,7 @@ const cssFiles = {
     "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css", "css/result-rwd.css"],
     "admin-test.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-test.css", "css/admin-test-rwd.css"],
     "admin-member.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-member.css", "css/admin-member-rwd.css"],
-    "memberactivity.html": ["css/layout.css", "css/layout-rwd.css", "css/memberactivity.css", "css/memberactivity-rwd.css"]
+    "admin-activity.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-activity.css", "css/admin-activity-rwd.css"]
 }
 
 const jsFiles = {

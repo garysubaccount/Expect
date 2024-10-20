@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/layout.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="top">
+            <div class="date-container">
+                <span>日期：</span>
+                <input type="date" id="startDate">
+                <span>&nbsp;~&nbsp;</span>
+                <input type="date" id="endDate">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="搜尋">
+                <a href="" id="searchbtn">
+                    <img src="images/search.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div id="container">
+            <div class="sort">
+                <div class="classify"onclick="sortTable(1)">全部</div>       
+            </div>
+            <div class="middle">
+            <div class="timeline">
+                <div class="date-circle">
+                    <div>
+                        <div>Sep</div>
+                        <div>28</div>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+            </div>
+            <div id="contents" class="scrollbar">
+                <div class="content">
+                    <div class="action">
+                        <p class="title">使用產業景氣預測</p>
+                        <p class="detail">使用資訊懶人包</p>
+                    </div>
+                    <div class="info">
+                        <p class="nametime">田裕賢</p>
+                        <p class="datetime">2024/09/28 14:59</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <table class="pages" id="pages-sentence">
+                <tr>
+                    <td><a href="">1</a></td>
+                    <td><a href=""><img src="images/nextpage.png" alt=""></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
