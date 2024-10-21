@@ -3,6 +3,7 @@
 @import url(userinfo.css);
 @import url(userinfo-rwd.css);
 @import url(forgotpassword.css);
+@import url(forgotpassword-rwd.css);
 
 * {
     margin: 0;

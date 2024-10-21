@@ -19,6 +19,10 @@
         width: 15%;
     }
 
+    .date-circle {
+        font-size: 2.4vw;
+    }
+
     #contents {
         width: 85%;
     }
