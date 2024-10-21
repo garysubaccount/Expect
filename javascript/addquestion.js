@@ -1,15 +1,15 @@
-var add = document.getElementById("adduser");
+var add = document.getElementById("addquestion");
 var closebtn = document.querySelectorAll("#close");
-var addupage = document.getElementById("addupage");
+var addqpage = document.getElementById("addqpage");
 
 add.addEventListener("click", function(event) {
     event.preventDefault();
-    addupage.style.display = "flex";
+    addqpage.style.display = "flex";
 });
 
 closebtn.forEach(function(btn) {
     btn.addEventListener("click", function(event) {
         event.preventDefault();
-        addupage.style.display = "none";
+        addqpage.style.display = "none";
     });
 });

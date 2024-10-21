@@ -47,8 +47,8 @@ const jsFiles = {
     "index.html": ["javascript/carousel.js"],
     "test-testing.html": ["javascript/dropable.js"],
     "test-history.html": ["javascript/sorttable.js"],
-    "admin-test.html": ["javascript/sorttable.js"],
-    "admin-member.html": ["javascript/edituser.js", "javascript/adduser.js"]
+    "admin-test.html": ["javascript/sorttable.js", "javascript/addquestion.js", "javascript/editquestion.js", "javascript/addoption.js"],
+    "admin-member.html": ["javascript/adduser.js", "javascript/edituser.js"]
 }
 
 function layout(page) {

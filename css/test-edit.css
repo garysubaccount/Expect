@@ -1,21 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-dialog {
+.test-edit {
     width: 40%;
     height: 85%;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
+    /* display: flex; */
 }
 
 #close {
@@ -53,40 +40,34 @@ dialog {
     align-items: center;
     border: 1px solid #000;
     border-radius: 25px;
-}
-
-table {
-    width: 95%;
-    height: 95%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px dashed #745329;
-}
-
-th {
-    width: 30%;
-}
-
-td {
-    width: 70%;
-}
-
-tr:first-of-type > * {
-    border-top: none;
-}
-
-tr:last-of-type > * {
-    border-bottom: none;
-}
-
-th {
-    border-left: none;
-}
-
-td {
-    border-right: none;
+    table {
+        width: 95%;
+        height: 95%;
+        border-collapse: collapse;
+        tr {
+            &:first-of-type > * {
+                border-top: none;
+            }
+    
+            &:last-of-type > * {
+                border-bottom: none;
+            }
+        }
+    
+        th, td {
+            border: 1px dashed #745329;
+        }
+    
+        th {
+            width: 30%;
+            border-left: none;
+        }
+        
+        td {
+            width: 70%;
+            border-right: none;
+        }
+    }
 }
 
 textarea {
@@ -96,16 +77,43 @@ textarea {
     resize: none;
 }
 
-input[type = "text"] {
-    width: 2em;
+#inputarea {
+    position: relative;
+}
+
+.input-container {
     background-color: #dbc8b6;
-    color: #fff;
     border-radius: 25px;
     margin: 2.5px;
-    padding: 5px 15px;
-    font-size: 18px;
+    padding: 5px 10px;
+    display: inline-block;
+    position: relative;
+}
+
+#addbtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.deletebtn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.opt {
+    background-color: transparent;
+    color: #fff;
+    padding: 0;
     text-align: center;
     border: none;
+    justify-content: center;
+    align-items: center;
     &::placeholder {
         color: #fff;
     }
@@ -128,6 +136,7 @@ input[type="file"],[type = "radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: static;
     cursor: pointer;
 }
 
@@ -136,6 +145,7 @@ input[type = "radio"] + label {
     height: 30px;
     border-radius: 10px;
     display: inline-block;
+    position: static;
     &:first-of-type {
         background-color: #f6c580;
     }
@@ -163,6 +173,12 @@ input:checked + label {
     width: 26px;
     height: 26px;
     border: 2px solid #000;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .preview, .save {

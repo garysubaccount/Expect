@@ -1,84 +1,69 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover 標籤示例</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>新增和刪除 Input</title>
     <style>
-        .group {
-            margin: 5rem auto;
-            width: 60%;
-        }
-        .radio-group {
-            width: 30%;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        .radio-input {
-            visibility: hidden; /* 把原本的input藏起來 */
-        }
-        .radio-label {
-            font-size: 1.6rem;
-            cursor: pointer;
+        .input-container {
+            width: 200px;
             position: relative;
-            padding-left: 3rem;
+            margin-bottom: 10px;
         }
-        .radio-button {
-            /* 自定義樣式的span */
-            height: 1.5rem;
-            width: 1.5rem;
-            border: 5px solid green;
-            border-radius: 50%;
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            top: 0;
+        input {
+            padding-right: 30px; /* 給刪除按鈕留出空間 */
         }
-        .radio-button::after { /* 中間點點 */
-            content: "";
-            display: block;
-            height: 1rem;
-            width: 1rem;
-            border-radius: 50%;
+        .delete-button {
             position: absolute;
+            right: 5px; /* 調整按鈕位置 */
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: green;
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-        .radio-input:checked ~ .radio-label .radio-button::after {
-            /* 選中radio時 才顯示中間點點 */
-            opacity: 1;
+            transform: translateY(-50%); /* 垂直居中 */
+            cursor: pointer; /* 讓游標顯示為手型 */
+            background: none; /* 去除背景 */
+            border: none; /* 去除邊框 */
+            color: inherit; /* 繼承顏色 */
+            font-size: inherit; /* 繼承字型大小 */
         }
     </style>
 </head>
 <body>
-    <div class="group">
-        <div class="radio-group">
-            <input type="radio" class="radio-input" id="1" name="number">
-            <label for="1" class="radio-label">
-                <span class="radio-button"></span>
-                radio 1
-            </label>
-        </div>
-        <div class="radio-group">
-            <input type="radio" class="radio-input" id="2" name="number">
-            <label for="2" class="radio-label">
-                <span class="radio-button"></span>
-                radio 2
-            </label>
-        </div>
-        
-        <div class="radio-group">
-            <input type="radio" class="radio-input" id="3" name="number">
-            <label for="3" class="radio-label">
-                <span class="radio-button"></span>
-                radio 3
-            </label>
-        </div>
-    </div>
+
+    <h1>動態新增 Input</h1>
+    <div id="inputArea"></div>
+    <a href="#" id="addButton">
+        <img src="images/add.svg" alt="新增" />
+    </a>
+
+    <script>
+        const inputArea = document.getElementById('inputArea');
+        const addButton = document.getElementById('addButton');
+        let inputCount = 0; // 用來計數，生成唯一 id
+
+        addButton.addEventListener('click', (event) => {
+            event.preventDefault(); // 防止頁面跳轉
+            inputCount++; // 每次新增時計數增加
+            const inputContainer = document.createElement('div');
+            inputContainer.classList.add('input-container');
+
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.value = '選項'; // 設定預設值為「選項」
+            input.className = 'opt'; // 設定 class
+            input.id = `dynamic-input-${inputCount}`; // 設定唯一 id
+
+            const deleteButton = document.createElement('a');
+            deleteButton.textContent = 'x';
+            deleteButton.classList.add('delete-button');
+            deleteButton.addEventListener('click', (event) => {
+                event.preventDefault(); // 防止頁面跳轉
+                inputArea.removeChild(inputContainer);
+            });
+
+            inputContainer.appendChild(input);
+            inputContainer.appendChild(deleteButton);
+            inputArea.appendChild(inputContainer);
+        });
+    </script>
+
 </body>
 </html>

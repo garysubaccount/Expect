@@ -1,3 +1,5 @@
+@import url(test-edit.css);
+
 #wrap {
     background-color: #f4eee2;
     width: 60%;
@@ -55,8 +57,10 @@ input[type = "search"] {
     width: 20%;
 }
 
-.edit img {
-    width: 10%;
+#editquestion {
+    display: flex;
+    width: 20px;
+    height: 20px;
 }
 
 table {

@@ -1,17 +1,17 @@
 var edituser = document.querySelectorAll("#edituser");
 var cancel = document.querySelectorAll('input[type="reset"]');
-var editpage = document.getElementById("editpage");
+var editupage = document.getElementById("editupage");
 
 edituser.forEach(function(edit) {
     edit.addEventListener("click", function(event) {
         event.preventDefault();
-        editpage.style.display = "flex";
+        editupage.style.display = "flex";
     });
 });
 
 cancel.forEach(function(close) {
     close.addEventListener("click", function(event) {
         event.preventDefault();
-        editpage.style.display = "none";
+        editupage.style.display = "none";
     })
 });
