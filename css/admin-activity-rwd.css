@@ -1,0 +1,42 @@
+@media screen and (max-width: 845px) {
+    #wrap {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #wrap {
+        width: 100%;
+        border-radius: 0;
+        font-size: 3.5vw;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .timeline {
+        width: 15%;
+    }
+
+    #contents {
+        width: 85%;
+    }
+
+    .action {
+        line-height: 1.6;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+    
+    .detail {
+        font-size: 14px;
+    }
+    
+    .info {
+        font-size: 12px;
+        text-align: right;
+    }
+}

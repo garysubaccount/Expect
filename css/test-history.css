@@ -38,6 +38,7 @@ table {
         align-items: center;
         cursor: pointer;
     }
+
     .number, .date {
         &::after {
             content: '';
@@ -58,10 +59,12 @@ table {
         &:first-of-type td {
             border-top: none;
         }
+
         &:last-of-type td {
             border-bottom: none;
         }
     }
+    
     td {
         border: 1px dashed #000;
         border-left: none;

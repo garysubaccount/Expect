@@ -1,5 +1,5 @@
 @media screen and (max-width: 845px) {
-    .loginpage, .registerpage {
+    .infopage {
         width: calc(80% - 100px);
     }
     
@@ -9,17 +9,13 @@
 }
 
 @media screen and (max-width: 470px) {
-    .loginpage, .registerpage {
-        width: 80%;
+    .infopage {
+        width: 100%;
+        height: 65%;
         padding: 50px 0;
     }
     
-    .registerpage {
-        width: 100%;
-        height: 65%;
-    }
-    
-    #switch {
+    #info {
         height: 40px;
         font-size: 20px;
     }

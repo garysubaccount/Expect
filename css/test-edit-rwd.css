@@ -1,0 +1,23 @@
+@media screen and (max-width: 845px) {
+    .test-edit {
+        width: calc(80% - 100px);
+    }
+
+    .title {
+        max-width: 250px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .test-edit {
+        width: 100%;
+        height: 75%;
+        padding: 50px 0;
+    }
+    
+    #addbtn {
+        width: 20px;
+        height: 20px;
+    }
+}

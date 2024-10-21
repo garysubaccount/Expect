@@ -58,7 +58,7 @@ input[type = "search"] {
 }
 
 #choosetodel {
-    width: 10%;
+    width: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,6 +69,7 @@ input[type = "search"] {
     #delete {
         width: 25px;
         height: 25px;
+        display: flex;
         align-items:center;
         img {
             width: 100%;
@@ -83,17 +84,17 @@ input[type = "search"] {
     height: 40px;
     border-radius:10px;
     display: flex;
-}
-
-.sort > * {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.sort {
+    > * {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
     .gender, .time {
         &::after {
             content: '';
@@ -102,30 +103,6 @@ input[type = "search"] {
             transform: translate(10px,25%);
         }
     }
-}
-
-.pages {
-    height: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 8px;
-}
-
-.pages a {
-    color: #16435f;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-
-}
-
-.pages a:hover {
-    color: #f0f0f0;
 }
 
 table {
@@ -137,26 +114,68 @@ table {
     height: calc(95% - 100px);
     text-align: center;
     border-collapse: collapse;
-}
-
-#items tr {
-    height: 15%;
-    &:first-of-type td {
-        border-top: none;
+    tr {
+        height: 15%;
+        &:first-of-type td {
+            border-top: none;
+        }
+        
+        &:last-of-type td {
+            border-bottom: none;
+        }
     }
-    &:last-of-type td {
-        border-bottom: none;
+    
+    td {
+        border: 1px dashed #000;
+        border-left: none;
+        border-right: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 
-#items td {
-    border: 1px dashed #000;
-    border-left: none;
-    border-right: none;
+#edituser {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.check, .name, .gender {
+.pages {
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+    a {
+        color: #16435f;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        &:hover {
+            color: #f0f0f0;
+        }
+    }
+}
+
+input[type = "checkbox"] {
+    width: 100%;
+}
+
+.check, .gender {
     width: 10%;
+}
+
+.name {
+    width: 15%;
 }
 
 .time{
@@ -164,7 +183,7 @@ table {
 }
 
 .account{
-    width: 30%;
+    width: 35%;
 }
 
 .edit img{

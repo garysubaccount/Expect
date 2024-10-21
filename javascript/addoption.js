@@ -1,5 +1,5 @@
 var inputArea = document.getElementById("inputarea");
-var addButton = document.getElementById("addbtn");
+var addButton = document.querySelectorAll("#addbtn");
 
 
 function addDynamicWidthListener(input, container) {
@@ -33,29 +33,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-addButton.addEventListener("click", (event) => {
-    event.preventDefault();
+addButton.forEach(function(add) {
+    add.addEventListener("click", (event) => {
+        event.preventDefault();
+        
+        var inputContainer = document.createElement("div");
+        inputContainer.classList.add("input-container");
+        inputContainer.style.width = "3em"
     
-    var inputContainer = document.createElement("div");
-    inputContainer.classList.add("input-container");
-    inputContainer.style.width = "3em"
-
-
-    var input = document.createElement("input");
-    input.type = "text";
-    input.value = "選項";
-    input.className = "opt";
-    input.id = "dynamic-input"; // Consider using unique IDs if needed
-    input.size = "1";
-    input.style.width = "100%"
-
-    // Add the dynamic width listener for the new input
-    addDynamicWidthListener(input, inputContainer);
+        var input = document.createElement("input");
+        input.type = "text";
+        input.value = "選項";
+        input.className = "opt";
+        input.id = "dynamic-input"; // Consider using unique IDs if needed
+        input.size = "1";
+        input.style.width = "100%"
     
-    // Create and add the delete button
-    var deleteButton = createDeleteButton(inputContainer);
-    
-    inputContainer.appendChild(input);
-    inputContainer.appendChild(deleteButton);
-    inputArea.appendChild(inputContainer);
-});
+        // Add the dynamic width listener for the new input
+        addDynamicWidthListener(input, inputContainer);
+        
+        // Create and add the delete button
+        var deleteButton = createDeleteButton(inputContainer);
+        
+        inputContainer.appendChild(input);
+        inputContainer.appendChild(deleteButton);
+        inputArea.appendChild(inputContainer);
+    });
+})

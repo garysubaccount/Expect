@@ -38,7 +38,7 @@ const cssFiles = {
     "test-history.html": ["css/layout.css", "css/layout-rwd.css", "css/test-history.css", "css/test-history-rwd.css"],
     "result.html": ["css/layout.css", "css/layout-rwd.css", "css/result.css", "css/result-rwd.css"],
     "admin-test.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-test.css", "css/admin-test-rwd.css"],
-    "admin-member.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-member.css"],
+    "admin-member.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-member.css", "css/admin-member-rwd.css"],
     "admin-activity.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-activity.css", "css/admin-activity-rwd.css"],
     "mailverify.html": ["css/layout.css", "css/layout-rwd.css", "css/mailverify.css"]
 }
