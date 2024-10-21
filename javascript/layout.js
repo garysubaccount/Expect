@@ -140,14 +140,16 @@ function login() {
 }
 
 function userinfo() {
-    var userinfo = document.getElementById("userinfo");
+    var userinfo = document.querySelectorAll("#userinfo");
     var cancel = document.querySelector('input[type="reset"]');
     var userpage = document.getElementById("userpage");
 
-    userinfo.addEventListener("click", function(event) {
-        event.preventDefault();
-        userpage.style.display = "flex";
-    });
+    userinfo.forEach(function(link){
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            userpage.style.display = "flex";
+        });
+    })
 
     cancel.addEventListener("click", function(event) {
         event.preventDefault();

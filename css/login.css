@@ -1,41 +1,42 @@
-#loginpage {
-    width: 450px;
-    height: 300px;
+.loginpage {
+    width: calc(60% - 100px);
+    max-width: 450px;
+    height: 50%;
 }
 
 .registerpage {
-    width: 550px;
-    height: 500px;
+    width: calc(60% - 100px);
+    max-width: 550px;
+    height: 60%;
 }
 
 #switch {
     background-color: #fdf1cb;
-    width: 300px;
+    width: 66.66%;
     height: 50px;
     font-size: 28px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    > * {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    > :first-child {
+        border-radius: 20px 0 0 20px;
+    }
+    
+    > :last-child {
+        border-radius: 0 20px 20px 0;
+    }
 }
 
-#switch >* {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#switch>:first-child {
-    border-radius: 20px 0 0 20px;
-}
-
-#switch>:last-child {
-    border-radius: 0 20px 20px 0;
-}
-
-#loginpage #switch>:first-child,
+.loginpage #switch>:first-child,
 .registerpage #switch>:last-child {
     background-color: #d5ad8a;
     color: #fff;
@@ -50,7 +51,7 @@
     background-color: #d5ad8a;
     color: #fff;
     font-size: 20px;
-    width: 350px;
+    width: 80%;
     height: 50px;
     border-radius: 25px;
     border: none;
@@ -69,20 +70,22 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    > * {
+        display: flex;
+        justify-content: center;
+    }
+
+    &:last-of-type {
+        justify-content: space-evenly;
+    }
 }
 
-.columns:last-of-type {
-    justify-content: space-evenly;
-}
-
-#name, #gender, #birth, #acc, #phone, #edu, #address, #pwd {
+.loginpage .input >*,
+.columns >* {
     width: 80%;
-    position: relative;
-}
-
-.columns > * {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 input, select {

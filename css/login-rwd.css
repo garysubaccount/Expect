@@ -1,0 +1,32 @@
+@media screen and (max-width: 845px) {
+    .loginpage, .registerpage {
+        width: calc(80% - 100px);
+    }
+    
+    #switch {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .loginpage, .registerpage {
+        width: 80%;
+    }
+
+    .loginpage {
+        padding: 50px 0;
+    }
+
+    .registerpage {
+        height: 65%;
+    }
+    
+    #switch {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #submit {
+        height: 40px;
+    }
+}

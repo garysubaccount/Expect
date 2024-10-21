@@ -83,6 +83,9 @@ input[type = "search"] {
 }
 
 .classify {
+    background-color: transparent;
+    padding: 0;
+    border: none;
     width: 10%;
     height: 100%;
     font-size: 20px;

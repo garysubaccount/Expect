@@ -1,13 +1,14 @@
 .infopage {
-    width: 550px;
-    height: 450px;
+    max-width: 550px;
+    width: calc(60% - 100px);
+    height: 60%;
 }
 
 #info {
     background-color: #fdefcb;
     font-size: 28px;
     width: 50%;
-    height: 60px;
+    height: 50px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     display: flex;
