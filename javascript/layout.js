@@ -10,7 +10,7 @@ const pages = {
     "/admin-test.html": "admin-test.html",
     "/admin-member.html": "admin-member.html",
     "/admin-activity.html": "admin-activity.html",
-    "/mailverify.html": "mailverify.html"
+    "/verifypage.html": "verifypage.html"
 }
 
 const titles = {
@@ -25,7 +25,7 @@ const titles = {
     "admin-test.html": "測驗管理",
     "admin-member.html": "會員管理",
     "admin-activity.html": "會員活動紀錄",
-    "mailverify.html": "信箱驗證成功"
+    "verifypage.html": "信箱驗證成功"
 }
 
 const cssFiles = {
@@ -40,7 +40,7 @@ const cssFiles = {
     "admin-test.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-test.css", "css/admin-test-rwd.css"],
     "admin-member.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-member.css", "css/admin-member-rwd.css"],
     "admin-activity.html": ["css/layout.css", "css/layout-rwd.css", "css/admin-activity.css", "css/admin-activity-rwd.css"],
-    "mailverify.html": ["css/layout.css", "css/layout-rwd.css", "css/mailverify.css"]
+    "verifypage.html": ["css/layout.css", "css/layout-rwd.css", "css/verifypage.css"]
 }
 
 const jsFiles = {
