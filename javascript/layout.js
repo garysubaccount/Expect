@@ -67,6 +67,12 @@ function layout(page) {
         const jsFile = jsFiles[page];
         login();
         userinfo();
+
+        const iconlink = document.createElement("link");
+        iconlink.rel = "icon";
+        iconlink.href = "images/logo.png";
+        document.head.appendChild(iconlink);
+
         if (title) {
             document.title = title;
         }
